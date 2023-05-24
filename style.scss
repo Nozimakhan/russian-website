@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+$main-color: #C8A35F;
+.container{
+    width: 1920px;
+    padding: 0 405px;
+}
+body{
+    width: 100vw;
+    background-color:  #2F343A;;
+    .top-line{
+        width: 1920px;
+        height: 45px;
+        background-color: $main-color;
+        .container{
+            .topline__content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 45px;
+                .lang{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    p{
+                        a{
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: rgb(255, 255, 255, 0.5);
+                        }
+                        a:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+                .number{
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+                .mailing{
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        width: 1920px;
+        height: 66px;
+        background-color:  #2F343A;;
+        .container{
+            .nav__content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 66px;
+                .img__logo{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        border-right: 1px solid #F2F2F2;
+                        padding-right: 30px;
+                    }
+                    p{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 17px;
+                        svg{
+                            margin-left: 37px;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            letter-spacing: 0.05em;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 30px;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        background-image: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)),url("./images/hero.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1920px;
+        height: 620px;
+        display: grid;
+        place-items: center;
+        .hero__title{
+            width: 920px;
+            height: 245px;
+            border: 1px solid #C8A35F;
+            padding: 45px 70px;
+            h1{
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 75px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+            }
+            p{
+                width: 777px;
+                height: 51px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .delivery-europe{
+        position: relative;
+        width: 1920px;
+        height: 561px;
+        margin-bottom: 120px;
+        .boxtwo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                width: 755px;
+                height: 561px;
+                background-color: #393f47;
+            }
+            .right{
+                width: 755px;
+                height: 561px;
+                background-color: #393f47;
+            }
+        }
+        .box__content{
+            position: absolute;
+            top: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .box__wrapper{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .box__text{
+                h2{
+                    width: 445px;
+                    height: 86px;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 49px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    width: 345px;
+                    height: 45px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                    margin-bottom: 50px;
+                }
+                button{
+                    width: 220px;
+                    height: 55px;
+                    background-color: $main-color;
+                    border: none;
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 25px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .box__image{
+                img{
+                    width: 445px;
+                    height: 266px;
+                }
+            }
+            .box__arrows{
+                display: flex;
+                flex-direction: column;
+                gap: 245px 0;
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 30px;
+                    a{
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 25px;
+                        text-align: center;
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                        color: #C8A35F;
+                    }
+                }
+            }
+        }
+    }
+    .service{
+        margin-bottom: 120px;
+        .container{
+            .service__content{
+                width: 1108px;
+                height: 504px;
+                img{
+                    margin-bottom: 40px;
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 49px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 60px;
+                }
+                .airplane__wrapper{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .airplane__card{
+                        width: 276px;
+                        height: 180px;
+                        background-color: #393f47;
+                        border: 1px solid black;
+                        .airplane__icon{
+                            padding: 55px 123px 35px 123px;
+                            svg{
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                        h3{
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-align: center;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .airplane__card:hover{
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .about{
+        position: relative;
+        width: 1110px;
+        height: 482px;
+        margin-bottom: 120px;
+        .container{
+            .bg__box{
+                display: grid;
+                place-items: center;
+                .bg__center{
+                    width: 410px;
+                    height: 482px;
+                    background: #393F47;
+                }
+            }
+        }
+        .about__content{
+            position: absolute;
+            top: 80px;
+            .container{
+                .about__wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0 65px;
+                    .about__text{
+                        img{
+                            margin-bottom: 40px;
+                        }
+                        h2{
+                            font-weight: 700;
+                            font-size: 40px;
+                            line-height: 49px;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            width: 445px;
+                            height: 179px;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 23px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .about__gallery{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .about__card{
+                            width: 200px;
+                            height: 160px;
+                            background-color: #FFFFFF;
+                            border: 0.25px solid #C8A35F;
+                            text-align: center;
+                            h2{
+                                font-weight: 700;
+                                font-size: 64px;
+                                line-height: 75px;
+                                text-align: center;
+                                letter-spacing: 0.05em;
+                                text-transform: uppercase;
+                                color: #2F343A;
+                                margin-top: 13px;
+                            }
+                            p{
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 21px;
+                                text-align: center;
+                                letter-spacing: 0.05em;
+                                color: #000000;
+                            }
+                            strong{
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 14px;
+                                text-align: center;
+                                color: #000000;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .company__map{
+        position: relative;
+        width: 1920px;
+        height: 450px;
+    }
+    .footer{
+        width: 1920px;
+        height: 161px;
+        background-color: $main-color;
+        .container{
+            .footer__content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                min-height: 161px;
+                .adress{
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;                       
+                        color: #F2F2F2;
+                        opacity: 0.8;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #2F343A;
+                    }
+                }
+                .contact{
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #F2F2F2;
+                    }
+                }
+                p.creator{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: right;
+                    text-decoration-line: underline;
+                    color: #2F343A;
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+    }
+    
+}
